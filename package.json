@@ -1,5 +1,5 @@
 {
-  "name": "react-native-webview-autoheight",
+  "name": "@nois/react-native-webview-autoheight",
   "version": "1.0.7",
   "description": "React Native WebView with AutoHeight",
   "main": "index.js",
@@ -18,7 +18,7 @@
     "height"
   ],
   "author": "Elton Jain",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/scazzy/react-native-webview-autoheight/issues"
   },
