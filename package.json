@@ -1,6 +1,6 @@
 {
   "name": "@nois/react-native-webview-autoheight",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "React Native WebView with AutoHeight",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
   "author": "Elton Jain",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/scazzy/react-native-webview-autoheight/issues"
+    "url": "https://github.com/@nois/react-native-webview-autoheight/issues"
   },
-  "homepage": "https://github.com/scazzy/react-native-webview-autoheight#readme"
+  "homepage": "https://github.com/@nois/react-native-webview-autoheight#readme"
 }
