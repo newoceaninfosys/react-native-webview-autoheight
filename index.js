@@ -1,16 +1,3 @@
-/**
- * Custom WebView with autoHeight feature
- *
- * @prop source: Same as WebView
- * @prop autoHeight: true|false
- * @prop defaultHeight: 100
- * @prop width: device Width
- * @prop ...props
- *
- * @author Elton Jain
- * @version v1.0.2
- */
-
 import React, { Component } from 'react';
 import {
   View,
