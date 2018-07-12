@@ -68,20 +68,31 @@ export default class MyWebView extends Component {
   }
 
   onLoadEnd = () => {
-    setTimeout(() => {
-      this.webview.injectJavaScript(`
-      let height = 0;
-      if(document.documentElement.clientHeight > document.body.clientHeight)
-      {
-        height = document.documentElement.clientHeight
+    this.webview.injectJavaScript(`
+      var count = 0;
+      var checkHeight = function () {
+        var height = 0;
+        if(document.documentElement.clientHeight > document.body.clientHeight)
+        {
+          height = document.documentElement.clientHeight
+        }
+        else
+        {
+          height = document.body.clientHeight
+        }
+        postMessage(height);
+
+        count++;
+
+        if(count < 5) {
+          setTimeout(function() {
+            checkHeight();
+          }, 800);
+        }
       }
-      else
-      {
-        height = document.body.clientHeight
-      }
-      postMessage(height)
+
+      checkHeight();
     `);
-    }, 500);
   }
 
   stopLoading() {
