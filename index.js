@@ -68,6 +68,8 @@ export default class MyWebView extends Component {
   }
 
   onLoadEnd = () => {
+    console.log('react-native-webview-autoheight onLoadEnd');
+    const {additionalInjectedJavaScript} = this.props;
     this.webview.injectJavaScript(`
       var count = 0;
       var checkHeight = function () {
@@ -92,6 +94,8 @@ export default class MyWebView extends Component {
       }
 
       checkHeight();
+      
+      ${additionalInjectedJavaScript || ''}
     `);
   }
 
