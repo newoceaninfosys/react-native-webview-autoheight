@@ -79,7 +79,7 @@ export default class MyWebView extends Component {
         if (/^{/.test(data)) {
             console.log('ReactNativeWebviewAutoHeight Height', JSON.parse(data)['height']);
             this.setState({
-                webViewHeight: JSON.parse(e.nativeEvent.data)['height']
+                webViewHeight: JSON.parse(data)['height']
             });
         }
     }
