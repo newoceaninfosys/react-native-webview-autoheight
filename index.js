@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import {
   View,
   Dimensions,
-  WebView,
 } from 'react-native';
+import { WebView } from 'react-native-webview';
 
 const injectedScript = function () {
   function waitForBridge() {
