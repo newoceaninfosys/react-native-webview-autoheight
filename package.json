@@ -1,6 +1,6 @@
 {
   "name": "@nois/react-native-webview-autoheight",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "React Native WebView with AutoHeight",
   "main": "index.js",
   "scripts": {
